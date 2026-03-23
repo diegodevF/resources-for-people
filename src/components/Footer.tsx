@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="py-14 section-padding border-t border-border">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
         <p className="font-display font-semibold text-lg tracking-tight">{t('footer.brand')}</p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <button
             onClick={() => i18n.changeLanguage('en')}
             className={`px-4 py-2 rounded-full font-medium transition-all duration-200 ${

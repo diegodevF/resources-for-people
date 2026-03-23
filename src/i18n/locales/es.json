@@ -45,5 +45,9 @@
   "buttons": {
     "whatsapp": "Contactar por WhatsApp",
     "paypal": "Paga por Paypal"
+  },
+  "footer": {
+    "brand": "ResourceHub",
+    "copyright": "© {{year}} Todos los derechos reservados."
   }
 }
