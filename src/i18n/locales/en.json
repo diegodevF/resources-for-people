@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "brand": "ResourceHub",
+    "brand": "MediaNova",
     "resources": "Resources"
   },
   "hero": {
@@ -43,7 +43,7 @@
     "description": "Write us on WhatsApp and receive personalized advice on the ideal resources for you."
   },
   "footer": {
-    "brand": "ResourceHub",
+    "brand": "MediaNova",
     "copyright": "© {{year}} All rights reserved."
   }
 }
