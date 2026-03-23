@@ -1,34 +1,10 @@
 import { Palette, Film, Code2, Package } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from 'react-i18next';
 
-const categories = [
-  {
-    icon: Palette,
-    title: "Para Diseñadores",
-    description: "Plantillas UI/UX, kits de iconos, mockups, paletas de color y tipografías seleccionadas.",
-    items: ["Plantillas Figma", "Mockups PSD", "Kits de iconos", "Paletas curadas"],
-  },
-  {
-    icon: Film,
-    title: "Para Editores",
-    description: "Presets de color, LUTs, transiciones, overlays y packs de audio para tus proyectos.",
-    items: ["Presets Lightroom", "LUTs para video", "Transiciones", "Packs de audio"],
-  },
-  {
-    icon: Code2,
-    title: "Para Programadores",
-    description: "Snippets, componentes, boilerplates y configuraciones listas para producción.",
-    items: ["Componentes React", "Snippets útiles", "Boilerplates", "Configs DevOps"],
-  },
-  {
-    icon: Package,
-    title: "Packs Combo",
-    description: "Bundles multidisciplinarios con descuento. Ideal para equipos y freelancers.",
-    items: ["Bundle creativo", "Pack freelancer", "Kit startup", "Pack agencia"],
-  },
-];
+const icons = [Palette, Film, Code2, Package];
 
-const ResourceCard = ({ category, index }: { category: typeof categories[0]; index: number }) => {
+const ResourceCard = ({ category, index }: { category: any; index: number }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -41,7 +17,7 @@ const ResourceCard = ({ category, index }: { category: typeof categories[0]; ind
     return () => observer.disconnect();
   }, []);
 
-  const Icon = category.icon;
+  const Icon = icons[index];
 
   return (
     <div
@@ -60,7 +36,7 @@ const ResourceCard = ({ category, index }: { category: typeof categories[0]; ind
       <h3 className="text-xl font-display font-semibold mb-3">{category.title}</h3>
       <p className="text-muted-foreground leading-relaxed mb-6">{category.description}</p>
       <ul className="space-y-2">
-        {category.items.map((item) => (
+        {category.items.map((item: string) => (
           <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
             <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
             {item}
@@ -72,18 +48,21 @@ const ResourceCard = ({ category, index }: { category: typeof categories[0]; ind
 };
 
 const ResourcesSection = () => {
+  const { t } = useTranslation();
+  const categories = (t('resources.categories', { returnObjects: true }) as any[]).map((cat, i) => ({ ...cat, icon: icons[i] }));
+
   return (
     <section id="recursos" className="py-24 lg:py-32 section-padding">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-xl mb-16">
           <p className="text-accent font-display font-medium tracking-wider uppercase text-sm mb-4">
-            Catálogo
+            {t('resourcesSection.subtitle')}
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-            Recursos para cada disciplina
+            {t('resourcesSection.title')}
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Archivos profesionales listos para usar. Actualizados constantemente.
+            {t('resourcesSection.description')}
           </p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

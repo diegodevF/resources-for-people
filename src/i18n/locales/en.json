@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "brand": "ResourceHub",
+    "resources": "Resources"
+  },
+  "hero": {
+    "subtitle": "Premium digital resources",
+    "title": "Everything you need to create, edit and program",
+    "description": "Templates, presets, code snippets, graphic assets and more. Curated resources for creative professionals.",
+    "viewResources": "View resources"
+  },
+  "resources": {
+    "categories": [
+      {
+        "title": "For Designers",
+        "description": "UI/UX templates, icon kits, mockups, color palettes and selected fonts.",
+        "items": ["Figma Templates", "PSD Mockups", "Icon Kits", "Curated Palettes"]
+      },
+      {
+        "title": "For Editors",
+        "description": "Color presets, LUTs, transitions, overlays and audio packs for your projects.",
+        "items": ["Lightroom Presets", "Video LUTs", "Transitions", "Audio Packs"]
+      },
+      {
+        "title": "For Programmers",
+        "description": "Snippets, components, boilerplates and production-ready configurations.",
+        "items": ["React Components", "Useful Snippets", "Boilerplates", "DevOps Configs"]
+      },
+      {
+        "title": "Combo Packs",
+        "description": "Multidisciplinary bundles with discount. Ideal for teams and freelancers.",
+        "items": ["Creative Bundle", "Freelancer Pack", "Startup Kit", "Agency Pack"]
+      }
+    ]
+  },
+  "resourcesSection": {
+    "subtitle": "Catalog",
+    "title": "Resources for each discipline",
+    "description": "Professional files ready to use. Constantly updated."
+  },
+  "cta": {
+    "title": "Ready to boost your work?",
+    "description": "Write us on WhatsApp and receive personalized advice on the ideal resources for you."
+  },
+  "footer": {
+    "brand": "ResourceHub",
+    "copyright": "© {{year}} All rights reserved."
+  }
+}

@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import heroImg from "@/assets/hero-workspace.jpg";
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background image with overlay */}
@@ -20,20 +23,19 @@ const HeroSection = () => {
             className="text-accent font-display font-medium tracking-wider uppercase text-sm"
             style={{ animationDelay: "0.1s" }}
           >
-            Recursos digitales premium
+            {t('hero.subtitle')}
           </p>
           <h1
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-[1.05] tracking-tight"
             style={{ animationDelay: "0.25s" }}
           >
-            Todo lo que necesitas para crear, editar y programar
+            {t('hero.title')}
           </h1>
           <p
             className="text-primary-foreground/70 text-lg sm:text-xl max-w-lg leading-relaxed"
             style={{ animationDelay: "0.4s" }}
           >
-            Plantillas, presets, snippets de código, assets gráficos y más. 
-            Recursos curados para profesionales creativos.
+            {t('hero.description')}
           </p>
           <div
             className="flex flex-col sm:flex-row gap-4 pt-4"
@@ -44,7 +46,7 @@ const HeroSection = () => {
               href="#recursos"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg border border-primary-foreground/20 text-primary-foreground font-medium transition-all duration-200 hover:bg-primary-foreground/10 active:scale-[0.97]"
             >
-              Ver recursos
+              {t('hero.viewResources')}
             </a>
           </div>
         </div>

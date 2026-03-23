@@ -1,0 +1,49 @@
+{
+  "navbar": {
+    "brand": "ResourceHub",
+    "resources": "Recursos"
+  },
+  "hero": {
+    "subtitle": "Recursos digitales premium",
+    "title": "Todo lo que necesitas para crear, editar y programar",
+    "description": "Plantillas, presets, snippets de código, assets gráficos y más. Recursos curados para profesionales creativos.",
+    "viewResources": "Ver recursos"
+  },
+  "resources": {
+    "categories": [
+      {
+        "title": "Para Diseñadores",
+        "description": "Plantillas UI/UX, kits de iconos, mockups, paletas de color y tipografías seleccionadas.",
+        "items": ["Plantillas Figma", "Mockups PSD", "Kits de iconos", "Paletas curadas"]
+      },
+      {
+        "title": "Para Editores",
+        "description": "Presets de color, LUTs, transiciones, overlays y packs de audio para tus proyectos.",
+        "items": ["Presets Lightroom", "LUTs para video", "Transiciones", "Packs de audio"]
+      },
+      {
+        "title": "Para Programadores",
+        "description": "Snippets, componentes, boilerplates y configuraciones listas para producción.",
+        "items": ["Componentes React", "Snippets útiles", "Boilerplates", "Configs DevOps"]
+      },
+      {
+        "title": "Packs Combo",
+        "description": "Bundles multidisciplinarios con descuento. Ideal para equipos y freelancers.",
+        "items": ["Bundle creativo", "Pack freelancer", "Kit startup", "Pack agencia"]
+      }
+    ]
+  },
+  "resourcesSection": {
+    "subtitle": "Catálogo",
+    "title": "Recursos para cada disciplina",
+    "description": "Archivos profesionales listos para usar. Actualizados constantemente."
+  },
+  "cta": {
+    "title": "¿Listo para potenciar tu trabajo?",
+    "description": "Escríbenos por WhatsApp y recibe asesoría personalizada sobre los recursos ideales para ti."
+  },
+  "footer": {
+    "brand": "ResourceHub",
+    "copyright": "© {{year}} Todos los derechos reservados."
+  }
+}

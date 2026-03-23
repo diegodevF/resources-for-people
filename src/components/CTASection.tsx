@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { WhatsAppButton } from "./WhatsAppButton";
 
 const CTASection = () => {
+  const { t } = useTranslation();
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -27,10 +29,10 @@ const CTASection = () => {
         }}
       >
         <h2 className="text-3xl sm:text-4xl font-bold text-primary-foreground tracking-tight mb-4">
-          ¿Listo para potenciar tu trabajo?
+          {t('cta.title')}
         </h2>
         <p className="text-primary-foreground/65 text-lg max-w-lg mx-auto mb-8 leading-relaxed">
-          Escríbenos por WhatsApp y recibe asesoría personalizada sobre los recursos ideales para ti.
+          {t('cta.description')}
         </p>
         <WhatsAppButton size="lg" />
       </div>
