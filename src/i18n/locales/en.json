@@ -42,8 +42,8 @@
     "title": "Ready to boost your work?",
     "description": "Write us on WhatsApp and receive personalized advice on the ideal resources for you."
   },
-  "footer": {
-    "brand": "MediaNova",
-    "copyright": "© {{year}} All rights reserved."
+  "buttons": {
+    "whatsapp": "Contact by WhatsApp",
+    "paypal": "Pay with Paypal"
   }
 }

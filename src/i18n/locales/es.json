@@ -42,8 +42,8 @@
     "title": "¿Listo para potenciar tu trabajo?",
     "description": "Escríbenos por WhatsApp y recibe asesoría personalizada sobre los recursos ideales para ti."
   },
-  "footer": {
-    "brand": "MediaNova",
-    "copyright": "© {{year}} Todos los derechos reservados."
+  "buttons": {
+    "whatsapp": "Contactar por WhatsApp",
+    "paypal": "Paga por Paypal"
   }
 }
