@@ -1,4 +1,5 @@
 import { WhatsAppButton } from "./WhatsAppButton";
+import { PaypalButton } from "./PaypalButton";
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/50">
@@ -7,10 +8,11 @@ const Navbar = () => (
         ResourceHub
       </a>
       <div className="flex items-center gap-6">
-        <a href="#recursos" className="hidden sm:block text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <a href="#recursos" className="hidden sm:block text-sm text-muted-foreground hover:text-foreground transition-colors" style={{scrollBehavior: "smooth"}}>
           Recursos
         </a>
         <WhatsAppButton />
+        <PaypalButton />
       </div>
     </div>
   </nav>
